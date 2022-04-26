@@ -9,6 +9,7 @@ __pycache__/
 # .idea
 .idea/
 
+.db
 # Distribution / packaging
 .Python
 build/
