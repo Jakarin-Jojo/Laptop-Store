@@ -8,14 +8,14 @@ CREATE TABLE IF NOT EXISTS laptop (
     company                 TEXT    NOT NULL,
     product                 TEXT    NOT NULL,
     type_name               TEXT    NOT NULL,
-    screen_size_inches      REAL    NOT NULL,
+    screen_size_inches      FLOAT    NOT NULL,
     screen_resolution       TEXT    NOT NULL,
     ram                     TEXT    NOT NULL,
     memory                  TEXT    NOT NULL,
     GPU                     TEXT    NOT NULL,
     operating_system        TEXT    NOT NULL,
     weight                  TEXT    NOT NULL,
-    price_euros             REAL    NOT NULL
+    price_euros             FLOAT    NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS customer (

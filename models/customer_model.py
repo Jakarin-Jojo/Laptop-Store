@@ -7,7 +7,6 @@ Base = declarative_base()
 class CustomerModel(Base):
     __tablename__ = "customer"
     id = Column(Integer, primary_key=True)
-    name = Column(Text, nullable=False)
     firstname = Column(Text, nullable=False)
     lastname = Column(Text, nullable=False)
     gender = Column(Text, nullable=False)
