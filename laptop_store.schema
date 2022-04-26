@@ -4,18 +4,27 @@
 -- sqlite3 laptop_store.db < laptop_store.schema
 
 CREATE TABLE IF NOT EXISTS laptop (
-    id             INTEGER PRIMARY KEY AUTOINCREMENT,
-    brand          TEXT    NOT NULL,
-    model          TEXT    NOT NULL,
-    price          INTEGER    NOT NULL
+    id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+    company                 TEXT    NOT NULL,
+    product                 TEXT    NOT NULL,
+    type_name               TEXT    NOT NULL,
+    screen_size_inches      REAL    NOT NULL,
+    screen_resolution       TEXT    NOT NULL,
+    ram                     TEXT    NOT NULL,
+    memory                  TEXT    NOT NULL,
+    GPU                     TEXT    NOT NULL,
+    operating_system        TEXT    NOT NULL,
+    weight                  TEXT    NOT NULL,
+    price_euros             REAL    NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS customer (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     firstname        TEXT    NOT NULL,
     lastname         TEXT    NOT NULL,
-    laptop_id       INTEGER  NOT NULL
-    FOREIGN KEY (laptop_id) REFERENCES car (id)
+    gender           TEXT    NOT NULL,
+    laptop_id       INTEGER  NOT NULL,
+    FOREIGN KEY (laptop_id) REFERENCES laptop (id)
 );
 
 
