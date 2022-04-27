@@ -10,7 +10,7 @@ sqlite3 laptop_store.db -init laptop_store.schema
 ```
 2. open the database
 ```sql
-sqlite3 laptop_store.sqlite3
+sqlite3 laptop_store.db
 ```
 3. Import data from both .csv files into the database.
 ```sql
