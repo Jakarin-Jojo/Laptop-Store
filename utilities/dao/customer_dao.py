@@ -8,3 +8,6 @@ class CustomerDao:
 
     def get_all_customer(self):
         return self.__session.query(CustomerModel).all()
+
+    def get_customer_by_id(self, id):
+        return self.__session.query(CustomerModel).filter_by(id=id)[0]
