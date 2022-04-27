@@ -12,6 +12,7 @@ class LaptopModel(Base):
     type_name = Column(Text, nullable=False)
     screen_size_inches = Column(FLOAT, nullable=False)
     screen_resolution = Column(Text, nullable=False)
+    CPU = Column(Text, nullable=False)
     ram = Column(Text, nullable=False)
     memory = Column(Text, nullable=False)
     GPU = Column(Text, nullable=False)
