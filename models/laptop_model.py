@@ -23,4 +23,4 @@ class LaptopModel(Base):
         return f"Laptop(id = {self.id}, company = {self.company}, product = {self.product}, type_name = {self.type_name}), "\
             f"screen_size_inches = {self.screen_size_inches}, screen_resolution = {self.screen_resolution}, ram = {self.ram}, "\
             f"memory = {self.memory}, GPU = {self.GPU}, operating_system = {self.operating_system}, weight = {self.weight}, "\
-            f"price_euros = {self.price_euros}"
+            f"price_euros = {self.price_euros}\n"

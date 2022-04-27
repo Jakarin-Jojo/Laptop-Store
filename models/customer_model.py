@@ -14,4 +14,4 @@ class CustomerModel(Base):
 
     def __repr__(self):
         return f"<Customer(id = {self.id}, firstname= {self.firstname}, lastname={self.lastname}, gender={self.gender},"\
-               f" laptop_id ={self.laptop_id})>"
+               f" laptop_id ={self.laptop_id})> \n"
