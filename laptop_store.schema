@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS laptop (
     type_name               TEXT    NOT NULL,
     screen_size_inches      FLOAT    NOT NULL,
     screen_resolution       TEXT    NOT NULL,
+    CPU                     TEXT    NOT NULL,
     ram                     TEXT    NOT NULL,
     memory                  TEXT    NOT NULL,
     GPU                     TEXT    NOT NULL,
