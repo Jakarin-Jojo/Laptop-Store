@@ -19,4 +19,6 @@ sqlite> .import data/customer.csv customer
 sqlite> .import data/laptop.csv laptop
 ```
 ## Domain Model
-![image](https://user-images.githubusercontent.com/72879083/165693162-2b981e67-b84f-4965-8709-845a2bb35684.png)
+![image](https://user-images.githubusercontent.com/72879083/165693162-2b981e67-b84f-4965-8709-845a2bb35684.png)  
+## Package Diagram  
+![Package Diagram](https://user-images.githubusercontent.com/72879083/165730399-6534457a-50b3-4a32-b4a6-d7ddd4524ae3.jpg)
