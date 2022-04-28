@@ -18,3 +18,5 @@ sqlite> .mode csv
 sqlite> .import data/customer.csv customer
 sqlite> .import data/laptop.csv laptop
 ```
+## Domain Model
+![image](https://user-images.githubusercontent.com/72879083/165693162-2b981e67-b84f-4965-8709-845a2bb35684.png)

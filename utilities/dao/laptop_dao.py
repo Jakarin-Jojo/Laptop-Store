@@ -19,4 +19,4 @@ class LaptopDao:
         return self.__session.query(LaptopModel).filter(LaptopModel.price_euros >= price).all()
 
     def get_laptop_by_type_name(self, type_name):
-        return self.__session.query(LaptopModel).filter(LaptopModel.type_name==type_name).all()
+        return self.__session.query(LaptopModel).filter(LaptopModel.type_name == type_name).all()
