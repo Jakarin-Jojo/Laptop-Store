@@ -20,3 +20,8 @@ class LaptopDao:
 
     def get_laptop_by_type_name(self, type_name):
         return self.__session.query(LaptopModel).filter(LaptopModel.type_name == type_name).all()
+
+    def add_new_customer(self, laptop):
+        self.__session.add(laptop)
+        self.__session.commit()
+        print(f"{laptop.product} is added in the database")

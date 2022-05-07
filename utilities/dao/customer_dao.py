@@ -11,3 +11,8 @@ class CustomerDao:
 
     def get_customer_by_id(self, id):
         return self.__session.query(CustomerModel).filter_by(id=id)[0]
+
+    def add_new_customer(self, customer):
+        self.__session.add(customer)
+        self.__session.commit()
+        print(f"{customer.firstname} is added in the database")
